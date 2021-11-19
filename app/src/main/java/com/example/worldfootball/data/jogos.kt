@@ -11,7 +11,8 @@ data class jogos(
     val id: Int,
     val EquipaCasa: String,
     val EquipaFora: String,
-    val Resultado: String,
+    val ResultadoCasa: Int,
+    val ResultadoFora: Int,
     val Amarelos: Int,
     val Vermelhos: Int
 
