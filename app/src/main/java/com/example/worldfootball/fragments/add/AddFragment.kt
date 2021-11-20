@@ -46,7 +46,15 @@ class AddFragment : Fragment() {
         val VermelhosFora = VermelhosFora.text
 
         if(inputcheck(EquipaCasa, EquipaFora, GolosMarcadosCasa, GolosMarcadosFora, AmarelosCasa, AmarelosFora, VermelhosCasa, VermelhosFora)){
-            val jogo = jogos(0, EquipaCasa, EquipaFora, Integer.parseInt(GolosMarcadosCasa.toString()), Integer.parseInt(GolosMarcadosFora.toString()), Integer.parseInt(AmarelosCasa.toString()), Integer.parseInt(AmarelosFora.toString()), Integer.parseInt(VermelhosCasa.toString()), Integer.parseInt(VermelhosFora.toString()))
+            val jogo = jogos(0, EquipaCasa,
+                EquipaFora,
+                Integer.parseInt(GolosMarcadosCasa.toString()),
+                Integer.parseInt(GolosMarcadosFora.toString()),
+                Integer.parseInt(AmarelosCasa.toString()),
+                Integer.parseInt(AmarelosFora.toString()),
+                Integer.parseInt(VermelhosCasa.toString()),
+                Integer.parseInt(VermelhosFora.toString()),
+                "")
 
             mJogoViewModel.addJogos(jogo)
             Toast.makeText(requireContext(), "Jogo Adicionado Com Sucesso", Toast.LENGTH_LONG).show()

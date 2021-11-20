@@ -4,8 +4,13 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.AutoMigration
 
-@Database(entities = [jogos::class], version = 1, exportSchema = false)
+@Database(entities = [jogos::class],
+    version = 2,
+    exportSchema = true,
+    autoMigrations = [AutoMigration (from = 1, to = 2)]
+)
 abstract class jogosDatabase: RoomDatabase() {
 
     abstract fun jogoDao(): JogoDao
