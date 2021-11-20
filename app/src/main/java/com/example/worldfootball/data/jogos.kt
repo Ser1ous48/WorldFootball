@@ -13,7 +13,9 @@ data class jogos(
     val EquipaFora: String,
     val ResultadoCasa: Int,
     val ResultadoFora: Int,
-    val Amarelos: Int,
-    val Vermelhos: Int
+    val AmarelosCasa: Int,
+    val AmarelosFora: Int,
+    val VermelhosCasa: Int,
+    val VermelhosFora: Int
 
 )

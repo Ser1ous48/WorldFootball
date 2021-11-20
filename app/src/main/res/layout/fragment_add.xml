@@ -7,7 +7,7 @@
     tools:context=".fragments.add.AddFragment">
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/EquipaFora"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.005" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/EquipaCasa"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.004" />
 
     <EditText
-        android:id="@+id/editTextNumber4"
+        android:id="@+id/GolosMarcadosCasa"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
@@ -45,7 +45,7 @@
         tools:layout_editor_absoluteY="46dp" />
 
     <EditText
-        android:id="@+id/editTextNumber5"
+        android:id="@+id/GolosMarcadosFora"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
@@ -55,7 +55,7 @@
         tools:layout_editor_absoluteY="46dp" />
 
     <EditText
-        android:id="@+id/editTextNumber6"
+        android:id="@+id/AmarelosCasa"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
@@ -65,7 +65,17 @@
         tools:layout_editor_absoluteY="89dp" />
 
     <EditText
-        android:id="@+id/editTextNumber8"
+        android:id="@+id/AmarelosFora"
+        android:layout_width="151dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Amarelos"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <EditText
+        android:id="@+id/VermelhosCasa"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
@@ -75,7 +85,7 @@
         tools:layout_editor_absoluteY="132dp" />
 
     <EditText
-        android:id="@+id/editTextNumber9"
+        android:id="@+id/VermelhosFora"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
@@ -83,25 +93,16 @@
         android:inputType="number"
         tools:layout_editor_absoluteX="245dp"
         tools:layout_editor_absoluteY="132dp" />
-
-    <EditText
-        android:id="@+id/editTextNumber7"
-        android:layout_width="151dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:hint="Amarelos"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="89dp" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_marginTop="24dp"
+        android:text="Adicionar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="231dp" />
+        app:layout_constraintTop_toBottomOf="@+id/VermelhosFora" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
