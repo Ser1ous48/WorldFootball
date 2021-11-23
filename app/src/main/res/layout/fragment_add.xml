@@ -16,11 +16,11 @@
 
 
     <EditText
-        android:id="@+id/EquipaFora"
+        android:id="@+id/EquipaCasa"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
-        android:hint="Equipa Fora"
+        android:hint="Equipa Casa"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,11 +30,11 @@
         app:layout_constraintVertical_bias="0.005" />
 
     <EditText
-        android:id="@+id/EquipaCasa"
+        android:id="@+id/EquipaFora"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
-        android:hint="Equipa Casa"
+        android:hint="Equipa Fora"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Golor marcaddos casa"
+            android:text="Golos Marcados Casa"
             android:textSize="16dp" />
 
     <EditText
@@ -60,52 +60,85 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="46dp" />
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Golos Marcados Fora"
+            android:textSize="16dp" />
+
+
     <EditText
         android:id="@+id/GolosMarcadosFora"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
-        android:hint="Golos Marcados"
+        android:text="0"
         android:inputType="number"
         tools:layout_editor_absoluteX="245dp"
         tools:layout_editor_absoluteY="46dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amarelos Casa"
+            android:textSize="16dp" />
+
 
     <EditText
         android:id="@+id/AmarelosCasa"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
-        android:hint="Amarelos"
+        android:text="0"
         android:inputType="number"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="89dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amarelos Fora"
+            android:textSize="16dp" />
 
     <EditText
         android:id="@+id/AmarelosFora"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
-        android:hint="Amarelos"
+        android:text="0"
         android:inputType="number"
         tools:layout_editor_absoluteX="245dp"
         tools:layout_editor_absoluteY="89dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vermelhos Casa"
+            android:textSize="16dp" />
 
     <EditText
         android:id="@+id/VermelhosCasa"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
-        android:hint="Vermelhos"
+        android:text="0"
         android:inputType="number"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="132dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vermelhos Fora"
+            android:textSize="16dp" />
 
     <EditText
         android:id="@+id/VermelhosFora"
         android:layout_width="151dp"
         android:layout_height="43dp"
         android:ems="10"
-        android:hint="Vermelhos"
+        android:text="0"
         android:inputType="number"
         tools:layout_editor_absoluteX="245dp"
         tools:layout_editor_absoluteY="132dp" />
