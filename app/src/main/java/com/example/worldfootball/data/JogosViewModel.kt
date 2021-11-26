@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 
 class JogosViewModel(application: Application): AndroidViewModel(application){
 
-    private val readAllData: LiveData<List<jogos>>
+    val readAllData: LiveData<List<jogos>>
     private val repositorio: JogoRepositorio
 
     init {
