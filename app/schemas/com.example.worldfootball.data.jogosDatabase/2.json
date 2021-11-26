@@ -1,0 +1,89 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "57189813f1158f97ab2bb95ffd3806c9",
+    "entities": [
+      {
+        "tableName": "tabela_jogos",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `EquipaCasa` TEXT NOT NULL, `EquipaFora` TEXT NOT NULL, `ResultadoCasa` INTEGER NOT NULL, `ResultadoFora` INTEGER NOT NULL, `AmarelosCasa` INTEGER NOT NULL, `AmarelosFora` INTEGER NOT NULL, `VermelhosCasa` INTEGER NOT NULL, `VermelhosFora` INTEGER NOT NULL, `DateGame` TEXT NOT NULL DEFAULT '')",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "EquipaCasa",
+            "columnName": "EquipaCasa",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "EquipaFora",
+            "columnName": "EquipaFora",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ResultadoCasa",
+            "columnName": "ResultadoCasa",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ResultadoFora",
+            "columnName": "ResultadoFora",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "AmarelosCasa",
+            "columnName": "AmarelosCasa",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "AmarelosFora",
+            "columnName": "AmarelosFora",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "VermelhosCasa",
+            "columnName": "VermelhosCasa",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "VermelhosFora",
+            "columnName": "VermelhosFora",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "DateGame",
+            "columnName": "DateGame",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '57189813f1158f97ab2bb95ffd3806c9')"
+    ]
+  }
+}
