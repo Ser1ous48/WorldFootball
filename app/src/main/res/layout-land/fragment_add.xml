@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.add.AddFragment"
-    android:layout_marginTop="5mm">
+    android:layout_marginTop="0mm">
 
 
     <!-- Layout Equipa da casa -->
@@ -14,7 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/LayoutEqCasa"
-        android:layout_alignParentLeft="true">
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25mm">
 
 
         <LinearLayout
@@ -25,7 +26,7 @@
             android:paddingRight="16dp">
 
             <EditText
-                android:id="@+id/UpdateEquipaCasa"
+                android:id="@+id/EquipaCasa"
                 android:layout_width="151dp"
                 android:layout_height="43dp"
                 android:ems="10"
@@ -46,7 +47,7 @@
                 android:textSize="16dp" />
 
             <EditText
-                android:id="@+id/UpdateGolosMarcadosCasa"
+                android:id="@+id/GolosMarcadosCasa"
                 android:layout_width="151dp"
                 android:layout_height="43dp"
                 android:ems="10"
@@ -63,7 +64,7 @@
 
 
             <EditText
-                android:id="@+id/UpdateAmarelosCasa"
+                android:id="@+id/AmarelosCasa"
                 android:layout_width="151dp"
                 android:layout_height="43dp"
                 android:ems="10"
@@ -79,7 +80,7 @@
                 android:textSize="16dp" />
 
             <EditText
-                android:id="@+id/UpdateVermelhosCasa"
+                android:id="@+id/VermelhosCasa"
                 android:layout_width="151dp"
                 android:layout_height="43dp"
                 android:ems="10"
@@ -107,7 +108,7 @@
             android:paddingRight="16dp">
 
             <EditText
-                android:id="@+id/UpdateEquipaFora"
+                android:id="@+id/EquipaFora"
                 android:layout_width="151dp"
                 android:layout_height="43dp"
                 android:ems="10"
@@ -128,7 +129,7 @@
 
 
             <EditText
-                android:id="@+id/UpdateGolosMarcadosFora"
+                android:id="@+id/GolosMarcadosFora"
                 android:layout_width="151dp"
                 android:layout_height="43dp"
                 android:ems="10"
@@ -144,7 +145,7 @@
                 android:textSize="16dp" />
 
             <EditText
-                android:id="@+id/UpdateAmarelosFora"
+                android:id="@+id/AmarelosFora"
                 android:layout_width="151dp"
                 android:layout_height="43dp"
                 android:ems="10"
@@ -160,7 +161,7 @@
                 android:textSize="16dp" />
 
             <EditText
-                android:id="@+id/UpdateVermelhosFora"
+                android:id="@+id/VermelhosFora"
                 android:layout_width="151dp"
                 android:layout_height="43dp"
                 android:ems="10"
@@ -173,14 +174,16 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/update_btn"
+        android:id="@+id/add_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/LayoutEqCasa"
+        android:layout_marginLeft="15mm"
+        android:layout_marginRight="15mm"
         android:layout_marginTop="24dp"
-        android:text="@string/Atualizar"
+        android:text="@string/Adicionar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_below="@id/LayoutEqCasa"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </RelativeLayout>

@@ -58,15 +58,15 @@ class ListFragment : Fragment() {
 
     private fun deleteAllJogos(){
         val builder = AlertDialog.Builder(requireContext())
-        builder.setPositiveButton("Sim") {_,_ ->
+        builder.setPositiveButton(R.string.Sim) {_,_ ->
             mJogosViewModel.deleteAllJogos()
-            Toast.makeText(requireContext(), "Tudo apagado com sucesso!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), R.string.TudoApagadoSucesso, Toast.LENGTH_SHORT).show()
         }
-        builder.setNegativeButton("Não"){_,_ ->
+        builder.setNegativeButton(R.string.Não){_,_ ->
 
         }
-        builder.setTitle("Apagar tudo?")
-        builder.setMessage("Tem a certeza que quer apagar tudo?")
+        builder.setTitle(R.string.ApagarTudo)
+        builder.setMessage(R.string.ConfirmarApagarTudo)
         builder.create().show()
     }
 

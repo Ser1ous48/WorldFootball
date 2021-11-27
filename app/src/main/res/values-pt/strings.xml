@@ -4,4 +4,27 @@
     <string name="Jogos">Jogos</string>
     <string name="next">Próximo</string>
     <string name="previous">Anterior</string>
+    <string name="Golos">Golos</string>
+    <string name="VermelhosCasa">Vermelhos</string>
+    <string name="AmarelosCasa">Amarelos</string>
+    <string name="VermelhosFora">Vermelhos Fora</string>
+    <string name="AmarelosFora">Amarelos Fora</string>
+    <string name="ResultadoCasa">Resultado Casa</string>
+    <string name="ResultadoFora">Resultado Fora</string>
+    <string name="EquipaCasa">Equipa Casa</string>
+    <string name="EquipaFora">Equipa Fora</string>
+    <string name="Adicionar">Adicionar</string>
+    <string name="Atualizar">Atualizar</string>
+    <string name="JogoAdicionado">Jogo adicionado com sucesso!</string>
+    <string name="AdicionarErro">Deve preencher todos os campos!</string>
+    <string name="AtualizarJogo">Jogo atualizado com sucesso!</string>
+    <string name="AtualizarErro">Deve preencher todos os campos!</string>
+    <string name="ApagarJogo">Apagar Jogo?</string>
+    <string name="ApagarSucesso">Apagado com sucesso!</string>
+    <string name="Sim">Sim</string>
+    <string name="Não">Não</string>
+    <string name="ConfirmarApagar">Tem a certeza que quer apagar?</string>
+    <string name="ApagarTudo">Apagar todos os jogos?</string>
+    <string name="TudoApagadoSucesso">Todos os jogos apagados com sucesso!</string>
+    <string name="ConfirmarApagarTudo">Tem a certeza que quer apagar todos os jogos?</string>
 </resources>

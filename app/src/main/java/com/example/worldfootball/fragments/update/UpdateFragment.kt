@@ -66,11 +66,11 @@ class UpdateFragment : Fragment() {
             val UpdateJogos = jogos(args.currentJogos.id, EquipaCasa, EquipaFora, ResultadoCasa, ResultadoFora, AmarelosCasa, AmarelosFora, VermelhosCasa, VermelhosFora)
             // Update Current Jogos
             mJogosViewModel.updateJogos(UpdateJogos)
-            Toast.makeText(requireContext(), "Atualização Bem Sucedida!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), R.string.AtualizarJogo, Toast.LENGTH_SHORT).show()
             //Navigate Back
             findNavController().navigate(R.id.action_updateFragment_to_listFragment)
         }else{
-            Toast.makeText(requireContext(), "Preencha todos os campos!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), R.string.AtualizarErro, Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -91,16 +91,16 @@ class UpdateFragment : Fragment() {
 
     private fun deleteJogos(){
         val builder = AlertDialog.Builder(requireContext())
-        builder.setPositiveButton("Sim") {_,_ ->
+        builder.setPositiveButton(R.string.Sim) {_,_ ->
             mJogosViewModel.deleteJogos(args.currentJogos)
-            Toast.makeText(requireContext(), "Apagado com sucesso!: ${args.currentJogos.EquipaCasa}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), R.string.ApagarSucesso, Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_updateFragment_to_listFragment)
         }
-        builder.setNegativeButton("Não"){_,_ ->
+        builder.setNegativeButton(R.string.Não){_,_ ->
 
         }
-        builder.setTitle("Apagar Jogo?")
-        builder.setMessage("Tem a certeza que quer apagar?")
+        builder.setTitle(R.string.ApagarJogo)
+        builder.setMessage(R.string.ConfirmarApagar)
         builder.create().show()
     }
 

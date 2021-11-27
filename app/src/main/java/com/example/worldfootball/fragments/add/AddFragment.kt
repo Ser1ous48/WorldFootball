@@ -57,11 +57,11 @@ class AddFragment : Fragment() {
                 )
 
             mJogoViewModel.addJogos(jogo)
-            Toast.makeText(requireContext(), "Jogo Adicionado Com Sucesso", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), R.string.JogoAdicionado, Toast.LENGTH_LONG).show()
 
             findNavController().navigate(R.id.action_addFragment_to_listFragment)
         }else{
-            Toast.makeText(requireContext(), "Deve Preencher Os Campos Todos!", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), R.string.AdicionarErro, Toast.LENGTH_LONG).show()
         }
     }
 

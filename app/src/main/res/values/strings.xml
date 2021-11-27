@@ -12,4 +12,31 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="Jogos">Games</string>
+    <string name="Golos">Goals</string>
+    <string name="VermelhosCasa">Red Cards Home</string>
+    <string name="AmarelosCasa">Yellow Cards Home</string>
+    <string name="VermelhosFora">Red Cards Away</string>
+    <string name="AmarelosFora">Yellow Cards Away</string>
+    <string name="ResultadoCasa">Score Home</string>
+    <string name="ResultadoFora">Score Away</string>
+    <string name="EquipaCasa">Home Team</string>
+    <string name="EquipaFora">Away Team</string>
+    <string name="Adicionar">Add</string>
+    <string name="Atualizar">Update</string>
+    <string name="JogoAdicionado">Game added with success!</string>
+    <string name="AdicionarErro">Must fill all the fields!</string>
+    <string name="AtualizarJogo">Game updated with success!</string>
+    <string name="AtualizarErro">Must fill all the fields!</string>
+    <string name="ApagarJogo">Delete Game?</string>
+    <string name="ApagarSucesso">Deleted with success!</string>
+    <string name="Sim">Yes</string>
+    <string name="Não">No</string>
+    <string name="ConfirmarApagar">Are you sure you want to delete?</string>
+    <string name="ApagarTudo">Delete All Games?</string>
+    <string name="TudoApagadoSucesso">All games deleted with success!</string>
+    <string name="ConfirmarApagarTudo">Are you sure you want to delete all games?</string>
+
+
+
+
 </resources>

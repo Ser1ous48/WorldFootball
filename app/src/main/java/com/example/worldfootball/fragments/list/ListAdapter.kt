@@ -1,5 +1,6 @@
 package com.example.worldfootball.fragments.list
 
+import android.provider.Settings.Global.getString
 import android.view.LayoutInflater
 import androidx.recyclerview.widget.RecyclerView
 import android.view.View
@@ -10,7 +11,7 @@ import com.example.worldfootball.model.jogos
 import kotlinx.android.synthetic.main.custom_row.view.*
 
 class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
-
+    // var xpto : String = R.string.Golos.toString()
     private var jogosList = emptyList<jogos>()
 
     class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
@@ -30,7 +31,7 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         holder.itemView.id_text.text = currentItem.id.toString()
         holder.itemView.EquipaCasa.text = currentItem.EquipaCasa
         holder.itemView.EquipaFora.text = currentItem.EquipaFora
-        holder.itemView.GolosMarcadosCasa.text = currentItem.ResultadoCasa.toString()
+        holder.itemView.GolosMarcadosCasa.text = /*xpto +*/ currentItem.ResultadoCasa.toString()
         holder.itemView.GolosMarcadosFora.text = currentItem.ResultadoFora.toString()
         holder.itemView.AmarelosCasa.text = currentItem.AmarelosCasa.toString()
         holder.itemView.AmarelosFora.text = currentItem.AmarelosFora.toString()

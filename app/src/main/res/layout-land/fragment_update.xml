@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.add.AddFragment"
-    android:layout_marginTop="5mm">
+    android:layout_marginTop="0mm">
 
 
     <!-- Layout Equipa da casa -->
@@ -14,7 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/LayoutEqCasa"
-        android:layout_alignParentLeft="true">
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25mm">
 
 
         <LinearLayout
@@ -176,11 +177,13 @@
         android:id="@+id/update_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/LayoutEqCasa"
+        android:layout_marginLeft="15mm"
         android:layout_marginTop="24dp"
+        android:layout_marginRight="15mm"
         android:text="@string/Atualizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_below="@id/LayoutEqCasa"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </RelativeLayout>
