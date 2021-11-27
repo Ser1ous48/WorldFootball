@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 2,
-    "identityHash": "57189813f1158f97ab2bb95ffd3806c9",
+    "identityHash": "f4190828b3a48ec66501d68aa836fe0c",
     "entities": [
       {
         "tableName": "tabela_jogos",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `EquipaCasa` TEXT NOT NULL, `EquipaFora` TEXT NOT NULL, `ResultadoCasa` INTEGER NOT NULL, `ResultadoFora` INTEGER NOT NULL, `AmarelosCasa` INTEGER NOT NULL, `AmarelosFora` INTEGER NOT NULL, `VermelhosCasa` INTEGER NOT NULL, `VermelhosFora` INTEGER NOT NULL, `DateGame` TEXT NOT NULL DEFAULT '')",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `EquipaCasa` TEXT NOT NULL, `EquipaFora` TEXT NOT NULL, `ResultadoCasa` INTEGER NOT NULL, `ResultadoFora` INTEGER NOT NULL, `AmarelosCasa` INTEGER NOT NULL, `AmarelosFora` INTEGER NOT NULL, `VermelhosCasa` INTEGER NOT NULL, `VermelhosFora` INTEGER NOT NULL)",
         "fields": [
           {
             "fieldPath": "id",
@@ -61,13 +61,6 @@
             "columnName": "VermelhosFora",
             "affinity": "INTEGER",
             "notNull": true
-          },
-          {
-            "fieldPath": "DateGame",
-            "columnName": "DateGame",
-            "affinity": "TEXT",
-            "notNull": true,
-            "defaultValue": "''"
           }
         ],
         "primaryKey": {
@@ -83,7 +76,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '57189813f1158f97ab2bb95ffd3806c9')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f4190828b3a48ec66501d68aa836fe0c')"
     ]
   }
 }

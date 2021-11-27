@@ -11,8 +11,8 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.worldfootball.R
-import com.example.worldfootball.data.JogosViewModel
-import com.example.worldfootball.data.jogos
+import com.example.worldfootball.viewmodel.JogosViewModel
+import com.example.worldfootball.model.jogos
 import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
 
@@ -54,7 +54,7 @@ class AddFragment : Fragment() {
                 Integer.parseInt(AmarelosFora.toString()),
                 Integer.parseInt(VermelhosCasa.toString()),
                 Integer.parseInt(VermelhosFora.toString()),
-                "")
+                )
 
             mJogoViewModel.addJogos(jogo)
             Toast.makeText(requireContext(), "Jogo Adicionado Com Sucesso", Toast.LENGTH_LONG).show()

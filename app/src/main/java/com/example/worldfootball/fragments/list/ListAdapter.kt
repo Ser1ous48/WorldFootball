@@ -4,8 +4,9 @@ import android.view.LayoutInflater
 import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.example.worldfootball.R
-import com.example.worldfootball.data.jogos
+import com.example.worldfootball.model.jogos
 import kotlinx.android.synthetic.main.custom_row.view.*
 
 class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
@@ -35,6 +36,11 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         holder.itemView.AmarelosFora.text = currentItem.AmarelosFora.toString()
         holder.itemView.VermelhosCasa.text = currentItem.VermelhosCasa.toString()
         holder.itemView.VermelhosFora.text = currentItem.VermelhosFora.toString()
+
+        holder.itemView.rowLayout.setOnClickListener{
+            val action = ListFragmentDirections.actionListFragmentToUpdateFragment(currentItem)
+            holder.itemView.findNavController().navigate(action)
+        }
 
     }
 

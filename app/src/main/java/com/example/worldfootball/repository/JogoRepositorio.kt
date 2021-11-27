@@ -1,6 +1,8 @@
-package com.example.worldfootball.data
+package com.example.worldfootball.repository
 
 import androidx.lifecycle.LiveData
+import com.example.worldfootball.data.JogoDao
+import com.example.worldfootball.model.jogos
 
 class JogoRepositorio(private val jogoDao: JogoDao) {
 
@@ -8,5 +10,9 @@ class JogoRepositorio(private val jogoDao: JogoDao) {
 
     suspend fun addJogos(jogos: jogos){
         jogoDao.addJogos(jogos)
+    }
+
+    suspend fun updateJogos(jogos: jogos){
+        jogoDao.updateJogos(jogos)
     }
 }

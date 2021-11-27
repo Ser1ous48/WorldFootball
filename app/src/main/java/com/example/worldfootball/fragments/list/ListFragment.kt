@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.worldfootball.R
-import com.example.worldfootball.data.JogosViewModel
+import com.example.worldfootball.viewmodel.JogosViewModel
 import kotlinx.android.synthetic.main.fragment_list.view.*
 
 
