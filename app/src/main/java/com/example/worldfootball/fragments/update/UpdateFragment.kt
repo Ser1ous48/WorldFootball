@@ -1,12 +1,11 @@
 package com.example.worldfootball.fragments.update
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextUtils
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -46,6 +45,9 @@ class UpdateFragment : Fragment() {
 
         }
 
+        // Add menu
+        setHasOptionsMenu(true)
+
         return view
     }
 
@@ -74,6 +76,32 @@ class UpdateFragment : Fragment() {
 
     private fun inputcheck(EquipaCasa: String, EquipaFora: String, GolosMarcadosCasa: Editable, GolosMarcadosFora: Editable, AmarelosCasa: Editable, AmarelosFora: Editable, VermelhosCasa: Editable, VermelhosFora: Editable): Boolean{
         return !(TextUtils.isEmpty(EquipaCasa) && TextUtils.isEmpty(EquipaFora) && GolosMarcadosCasa.isEmpty() && GolosMarcadosFora.isEmpty() && AmarelosCasa.isEmpty() && AmarelosFora.isEmpty() && VermelhosCasa.isEmpty() && VermelhosFora.isEmpty())
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.delete_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == R.id.menu_delete){
+            deleteJogos()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun deleteJogos(){
+        val builder = AlertDialog.Builder(requireContext())
+        builder.setPositiveButton("Sim") {_,_ ->
+            mJogosViewModel.deleteJogos(args.currentJogos)
+            Toast.makeText(requireContext(), "Apagado com sucesso!: ${args.currentJogos.EquipaCasa}", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_updateFragment_to_listFragment)
+        }
+        builder.setNegativeButton("Não"){_,_ ->
+
+        }
+        builder.setTitle("Apagar Jogo?")
+        builder.setMessage("Tem a certeza que quer apagar?")
+        builder.create().show()
     }
 
 }

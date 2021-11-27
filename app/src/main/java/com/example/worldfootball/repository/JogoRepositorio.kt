@@ -15,4 +15,12 @@ class JogoRepositorio(private val jogoDao: JogoDao) {
     suspend fun updateJogos(jogos: jogos){
         jogoDao.updateJogos(jogos)
     }
+
+    suspend fun deleteJogos(jogos: jogos){
+        jogoDao.deleteJogos(jogos)
+    }
+
+    suspend fun deleteAllJogos(){
+        jogoDao.deleteAllJogos()
+    }
 }

@@ -33,4 +33,15 @@ class JogosViewModel(application: Application): AndroidViewModel(application){
             repositorio.updateJogos(jogos)
         }
     }
+
+    fun deleteJogos(jogos: jogos){
+        viewModelScope.launch(Dispatchers.IO) {
+            repositorio.deleteJogos(jogos)
+        }
+    }
+    fun deleteAllJogos(){
+        viewModelScope.launch(Dispatchers.IO) {
+            repositorio.deleteAllJogos()
+        }
+    }
 }
