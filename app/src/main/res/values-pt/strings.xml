@@ -27,4 +27,12 @@
     <string name="ApagarTudo">Apagar todos os jogos?</string>
     <string name="TudoApagadoSucesso">Todos os jogos apagados com sucesso!</string>
     <string name="ConfirmarApagarTudo">Tem a certeza que quer apagar todos os jogos?</string>
+    <string name="Entrar">Entrar</string>
+    <string name="Utilizador">Utilizador</string>
+    <string name="PalavraPasse">Palavra Passe</string>
+    <string name="Registar">Registar</string>
+    <string name="Sessaoexpirada">Sessão Expirada</string>
+    <string name="Sessaoexpirada_mensagem">Sessão Expirada</string>
+    <string name="erroalgo">Something went wrong!</string>
+    <string name="ola">Hello</string>
 </resources>

@@ -35,6 +35,14 @@
     <string name="ApagarTudo">Delete All Games?</string>
     <string name="TudoApagadoSucesso">All games deleted with success!</string>
     <string name="ConfirmarApagarTudo">Are you sure you want to delete all games?</string>
+    <string name="Entrar">Login</string>
+    <string name="Utilizador">Username</string>
+    <string name="PalavraPasse">Password</string>
+    <string name="Registar">Sign In</string>
+    <string name="Sessaoexpirada">Session Expired</string>
+    <string name="Sessaoexpirada_mensagem">Session Expired</string>
+    <string name="erroalgo">Algo correu mal!</string>
+    <string name="ola">Olá</string>
 
 
 </resources>

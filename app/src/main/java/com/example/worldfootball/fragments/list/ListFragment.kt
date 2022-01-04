@@ -50,6 +50,11 @@ class ListFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.user_login) {
+            openlogin()
+        }
+
+
         if(item.itemId == R.id.menu_delete){
             deleteAllJogos()
         }
@@ -68,6 +73,9 @@ class ListFragment : Fragment() {
         builder.setTitle(R.string.ApagarTudo)
         builder.setMessage(R.string.ConfirmarApagarTudo)
         builder.create().show()
+    }
+    private  fun openlogin(){
+        findNavController().navigate(R.id.action_listFragment_to_userLoginFragment)
     }
 
 }

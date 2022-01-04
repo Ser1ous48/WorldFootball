@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/userLoginFragment"
-        android:name="com.example.worldfootball.UserLoginFragment"
+        android:name="com.example.worldfootball.fragments.login.UserLoginFragment"
         android:label="fragment_user_login"
         tools:layout="@layout/fragment_user_login" >
         <action
