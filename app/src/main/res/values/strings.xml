@@ -41,8 +41,11 @@
     <string name="Registar">Sign In</string>
     <string name="Sessaoexpirada">Session Expired</string>
     <string name="Sessaoexpirada_mensagem">Session Expired</string>
-    <string name="erroalgo">Algo correu mal!</string>
-    <string name="ola">Olá</string>
+    <string name="erroalgo">Something went wrong!</string>
+    <string name="ola">Hello</string>
+    <string name="Sair">Logout</string>
+    <string name="Sair_mensagem">Logout?</string>
+
 
 
 </resources>

@@ -6,7 +6,7 @@ import com.example.worldfootball.api_worldfootball.models.Jogos_Models
 import retrofit2.Call
 import retrofit2.http.*
 
-interface ReportsApi {
+interface JogosApi {
     @GET("worldfootball/read")
     fun getJogo(@Header("Authorization") token: String): Call<List<Jogos_Models>>
 

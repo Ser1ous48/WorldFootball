@@ -49,5 +49,17 @@
         <action
             android:id="@+id/action_userLoginFragment_to_listFragment"
             app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_userLoginFragment_to_jogosListFragment"
+            app:destination="@id/jogosListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jogosListFragment"
+        android:name="com.example.worldfootball.fragments.jogos_list.JogosListFragment"
+        android:label="fragment_jogos_list"
+        tools:layout="@layout/fragment_jogos_list" >
+        <action
+            android:id="@+id/action_jogosListFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
     </fragment>
 </navigation>

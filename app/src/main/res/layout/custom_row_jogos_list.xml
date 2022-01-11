@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rowLayout_list"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:padding="24sp">
+
+    <TextView
+        android:id="@+id/id_text_list"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/EquipaCasa_list"
+        android:layout_width="350px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:gravity="center"
+        android:text="Equipa Casa"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/id_text_list"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EquipaFora_list"
+        android:layout_width="350px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="Equipa Fora"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_text_list" />
+
+    <TextView
+        android:id="@+id/GolosMarcadosCasa_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="Golos"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/EquipaCasa_list"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/GolosMarcadosFora_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="32dp"
+        android:text="Golos"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EquipaFora_list" />
+
+    <TextView
+        android:id="@+id/AmarelosCasa_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:background="#FFEB3B"
+        android:text="Amarelos"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/GolosMarcadosCasa_list"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AmarelosFora_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="32dp"
+        android:background="#FFEB3B"
+        android:text="Amarelos"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/GolosMarcadosFora_list" />
+
+    <TextView
+        android:id="@+id/VermelhosCasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:background="#FF0000"
+        android:text="Vermelhos"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/AmarelosCasa_list"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/VermelhosFora_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="32dp"
+        android:background="#FF0000"
+        android:text="Vermelhos"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/AmarelosFora_list" />
+
+    <TextView
+        android:id="@+id/username_list"
+        android:layout_width="350px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:gravity="center"
+        android:text="Utilizador"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/id_text_list"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="58dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

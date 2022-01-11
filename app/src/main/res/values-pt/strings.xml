@@ -33,6 +33,8 @@
     <string name="Registar">Registar</string>
     <string name="Sessaoexpirada">Sessão Expirada</string>
     <string name="Sessaoexpirada_mensagem">Sessão Expirada</string>
-    <string name="erroalgo">Something went wrong!</string>
-    <string name="ola">Hello</string>
+    <string name="erroalgo">Algo correu mal!</string>
+    <string name="ola">Olá</string>
+    <string name="Sair">Sair</string>
+    <string name="Sair_mensagem">Sair?</string>
 </resources>
