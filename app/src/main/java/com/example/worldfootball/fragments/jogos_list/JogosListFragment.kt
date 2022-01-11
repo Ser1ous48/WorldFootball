@@ -37,7 +37,7 @@ class JogosListFragment : Fragment() {
         getAndSetData(view)
 
         view.floatingActionButton_list.setOnClickListener() {
-            //findNavController().navigate(R.id.action_reportsListFragment_to_addReportFragment)
+            //findNavController().navigate(R.id.action_jogosListFragment_to_addReportFragment)
         }
 
         return view
@@ -87,7 +87,7 @@ class JogosListFragment : Fragment() {
                 } else {
                     if (response.code() == 401) {
                         unauthorized(navigatonHandlder = {
-                            findNavController().navigate(R.id.action_jogosListFragment_to_userLoginFragment)
+                            findNavController().navigate(R.id.action_userLoginFragment_to_jogosListFragment)
                         })
                     } else {
                         somethingWentWrong()
