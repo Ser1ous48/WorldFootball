@@ -45,7 +45,7 @@
     <string name="ola">Hello</string>
     <string name="Sair">Logout</string>
     <string name="Sair_mensagem">Logout?</string>
-
+    <string name="preencher_equipas">Fill team names!</string>
 
 
 </resources>

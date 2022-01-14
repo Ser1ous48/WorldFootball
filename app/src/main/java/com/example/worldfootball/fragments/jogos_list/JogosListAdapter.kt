@@ -41,7 +41,7 @@ class JogosListAdapter(userIdInSession: String?) : RecyclerView.Adapter<JogosLis
         holder.itemView.GolosMarcadosFora_list.text = currentItem.ResultadoFora.toString()
         holder.itemView.AmarelosCasa_list.text = currentItem.AmarelosCasa.toString()
         holder.itemView.AmarelosFora_list.text = currentItem.AmarelosFora.toString()
-        holder.itemView.VermelhosCasa.text = currentItem.VermelhosCasa.toString()
+        holder.itemView.VermelhosCasa_list.text = currentItem.VermelhosCasa.toString()
         holder.itemView.VermelhosFora_list.text = currentItem.VermelhosFora.toString()
 
         if(position%2 == 0){

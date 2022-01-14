@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.jogos.userLoginAddFragment">
+
+    <!-- Layout Equipa da casa -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LayoutEqCasa_list"
+        android:layout_alignParentLeft="true">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <EditText
+                android:id="@+id/EquipaCasa_list"
+                android:layout_width="151dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:hint="@string/EquipaCasa"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.938"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.005" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ResultadoCasa"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/GolosMarcadosCasa_list"
+                android:layout_width="151dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/AmarelosCasa"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:id="@+id/AmarelosCasa_list"
+                android:layout_width="151dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="89dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/VermelhosCasa"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/VermelhosCasa_list"
+                android:layout_width="151dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="132dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Layout Equipa Fora -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LayoutEqFora"
+        android:layout_toRightOf="@id/LayoutEqCasa_list">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <EditText
+                android:id="@+id/EquipaFora_list"
+                android:layout_width="151dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:hint="@string/EquipaFora"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.004" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ResultadoFora"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:id="@+id/GolosMarcadosFora_list"
+                android:layout_width="151dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="245dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/AmarelosFora"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/AmarelosFora_list"
+                android:layout_width="151dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="245dp"
+                tools:layout_editor_absoluteY="89dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/VermelhosFora"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/VermelhosFora_list"
+                android:layout_width="151dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="245dp"
+                tools:layout_editor_absoluteY="132dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/add_btn_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LayoutEqCasa_list"
+        android:layout_marginTop="24dp"
+        android:text="@string/Adicionar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</RelativeLayout>

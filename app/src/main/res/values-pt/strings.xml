@@ -37,4 +37,5 @@
     <string name="ola">Olá</string>
     <string name="Sair">Sair</string>
     <string name="Sair_mensagem">Sair?</string>
+    <string name="preencher_equipas">Preencha as equipas!</string>
 </resources>

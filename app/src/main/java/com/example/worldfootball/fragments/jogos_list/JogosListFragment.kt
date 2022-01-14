@@ -37,7 +37,7 @@ class JogosListFragment : Fragment() {
         getAndSetData(view)
 
         view.floatingActionButton_list.setOnClickListener() {
-            //findNavController().navigate(R.id.action_jogosListFragment_to_addReportFragment)
+            findNavController().navigate(R.id.action_jogosListFragment_to_userLoginAddFragment)//action_jogosListFragment_to_addReportFragment
         }
 
         return view

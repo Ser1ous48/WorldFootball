@@ -15,7 +15,7 @@ data class Jogos_Models (
     val AmarelosCasa: Int,
     val AmarelosFora: Int,
     val VermelhosCasa: Int,
-    val VermelhosFora: Int,
+    val VermelhosFora: Int
     //val created_at : String,
     /*val title: String,
     val description: String,*/

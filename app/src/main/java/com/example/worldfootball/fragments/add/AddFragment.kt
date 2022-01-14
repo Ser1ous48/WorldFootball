@@ -65,8 +65,10 @@ class AddFragment : Fragment() {
         }
     }
 
-    private fun inputcheck(EquipaCasa: String, EquipaFora: String, GolosMarcadosCasa: Editable, GolosMarcadosFora: Editable, AmarelosCasa: Editable, AmarelosFora: Editable, VermelhosCasa: Editable, VermelhosFora: Editable): Boolean{
-        return !(TextUtils.isEmpty(EquipaCasa) && TextUtils.isEmpty(EquipaFora) && GolosMarcadosCasa.isEmpty() && GolosMarcadosFora.isEmpty() && AmarelosCasa.isEmpty() && AmarelosFora.isEmpty() && VermelhosCasa.isEmpty() && VermelhosFora.isEmpty())
+    private fun inputcheck(EquipaCasa: String, EquipaFora: String, GolosMarcadosCasa: Editable, GolosMarcadosFora: Editable, AmarelosCasa: Editable,
+                           AmarelosFora: Editable, VermelhosCasa: Editable, VermelhosFora: Editable): Boolean{
+        return !(TextUtils.isEmpty(EquipaCasa) && TextUtils.isEmpty(EquipaFora) && GolosMarcadosCasa.isEmpty() && GolosMarcadosFora.isEmpty()
+                && AmarelosCasa.isEmpty() && AmarelosFora.isEmpty() && VermelhosCasa.isEmpty() && VermelhosFora.isEmpty())
     }
 
 

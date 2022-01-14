@@ -61,5 +61,20 @@
         <action
             android:id="@+id/action_jogosListFragment_to_userLoginFragment"
             app:destination="@id/userLoginFragment" />
+        <action
+            android:id="@+id/action_jogosListFragment_to_userLoginAddFragment"
+            app:destination="@id/userLoginAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userLoginAddFragment"
+        android:name="com.example.worldfootball.fragments.jogos.userLoginAddFragment"
+        android:label="fragment_user_login_add"
+        tools:layout="@layout/fragment_user_login_add" >
+        <action
+            android:id="@+id/action_userLoginAddFragment_to_jogosListFragment"
+            app:destination="@id/jogosListFragment" />
+        <action
+            android:id="@+id/action_userLoginAddFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
     </fragment>
 </navigation>
