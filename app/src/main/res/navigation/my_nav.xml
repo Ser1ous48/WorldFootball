@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.example.worldfootball.fragments.list.ListFragment"
-        android:label="Listar"
-        tools:layout="@layout/fragment_list" >
+        android:label="Listar Jogos"
+        tools:layout="@layout/fragment_list">
         <action
             android:id="@+id/action_listFragment_to_addFragment"
             app:destination="@id/addFragment" />
@@ -43,12 +43,18 @@
         <argument
             android:name="currentJogos"
             app:argType="com.example.worldfootball.model.jogos" />
+        <action
+            android:id="@+id/action_updateFragment_to_maps2"
+            app:destination="@id/maps" />
+        <action
+            android:id="@+id/action_updateFragment_to_userLoginFragment2"
+            app:destination="@id/userLoginFragment" />
     </fragment>
     <fragment
         android:id="@+id/userLoginFragment"
         android:name="com.example.worldfootball.fragments.login.UserLoginFragment"
-        android:label="fragment_user_login"
-        tools:layout="@layout/fragment_user_login" >
+        android:label="Login"
+        tools:layout="@layout/fragment_user_login">
         <action
             android:id="@+id/action_userLoginFragment_to_listFragment"
             app:destination="@id/listFragment" />

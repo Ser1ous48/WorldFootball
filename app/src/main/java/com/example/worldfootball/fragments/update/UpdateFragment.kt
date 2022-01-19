@@ -51,6 +51,8 @@ class UpdateFragment : Fragment() {
         return view
     }
 
+
+
     private fun updateItem(){
         val EquipaCasa = UpdateEquipaCasa.text.toString()
         val EquipaFora = UpdateEquipaFora.text.toString()
@@ -86,6 +88,16 @@ class UpdateFragment : Fragment() {
         if(item.itemId == R.id.menu_delete){
             deleteJogos()
         }
+
+        if(item.itemId == R.id.maps){
+            //findNavController().navigate(R.id.action_listFragment_to_maps_2)
+            openmaps()
+        }
+
+        if (item.itemId == R.id.user_login) {
+            openlogin()
+        }
+
         return super.onOptionsItemSelected(item)
     }
 
@@ -103,5 +115,15 @@ class UpdateFragment : Fragment() {
         builder.setMessage(R.string.ConfirmarApagar)
         builder.create().show()
     }
+
+    private  fun openlogin(){
+        findNavController().navigate(R.id.action_updateFragment_to_userLoginFragment2)//action_listFragment_to_userLoginFragment
+    }
+
+    private  fun openmaps(){
+        findNavController().navigate(R.id.action_updateFragment_to_maps2)//action_listFragment_to_maps
+    }
+
+
 
 }
