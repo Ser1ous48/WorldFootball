@@ -32,12 +32,12 @@ interface JogosApi {
         @Field("id") id: Int,
         @Field("EquipaCasa") EquipaCasa: String,
         @Field("EquipaFora") EquipaFora: String,
-        @Field("ResultadoCasa") ResultadoCasa: Int,
-        @Field("ResultadoFora") ResultadoFora: Int,
-        @Field("AmarelosCasa") AmarelosCasa: Int,
-        @Field("AmarelosFora") AmarelosFora: Int,
-        @Field("VermelhosCasa") VermelhosCasa: Int,
-        @Field("VermelhosFora") VermelhosFora: Int
+        @Field("ResultadoCasa") ResultadoCasa: String?,
+        @Field("ResultadoFora") ResultadoFora: String?,
+        @Field("AmarelosCasa") AmarelosCasa: String?,
+        @Field("AmarelosFora") AmarelosFora: String?,
+        @Field("VermelhosCasa") VermelhosCasa: String?,
+        @Field("VermelhosFora") VermelhosFora: String?
     ): Call<JogoDto>
 
     @FormUrlEncoded

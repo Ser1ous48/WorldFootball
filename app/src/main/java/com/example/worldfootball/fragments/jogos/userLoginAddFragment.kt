@@ -80,8 +80,8 @@ class userLoginAddFragment : Fragment() {
             )
                 .show()
         } else {
-            llProgressBar.bringToFront()
-            llProgressBar.visibility = View.VISIBLE
+            llProgressBarAdd.bringToFront()
+            llProgressBarAdd.visibility = View.VISIBLE
 
             val request = ServiceBuilder.buildService(JogosApi::class.java)
             val call = request.createJogo(
@@ -99,7 +99,7 @@ class userLoginAddFragment : Fragment() {
 
             call.enqueue(object : Callback<JogoDto> {
                 override fun onResponse(call: Call<JogoDto>, response: Response<JogoDto>) {
-                    llProgressBar.visibility = View.GONE
+                    llProgressBarAdd.visibility = View.GONE
 
                     if (response.isSuccessful) {
                         val report: JogoDto = response.body()!!
@@ -133,7 +133,7 @@ class userLoginAddFragment : Fragment() {
                 }
 
                 override fun onFailure(call: Call<JogoDto>, t: Throwable) {
-                    llProgressBar.visibility = View.GONE
+                    llProgressBarAdd.visibility = View.GONE
                     somethingWentWrong()
                 }
             })

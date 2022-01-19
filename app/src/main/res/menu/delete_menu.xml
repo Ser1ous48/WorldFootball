@@ -15,4 +15,10 @@
         android:iconTint="@android:color/white"
         app:showAsAction="ifRoom"/>
 
+    <item android:id="@+id/maps"
+        android:title="Update"
+        android:icon="@drawable/ic_baseline_my_location_24"
+        android:iconTint="@android:color/white"
+        app:showAsAction="ifRoom"/>
+
 </menu>

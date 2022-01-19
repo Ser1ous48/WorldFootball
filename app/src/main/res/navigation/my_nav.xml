@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_listFragment_to_userLoginFragment"
             app:destination="@id/userLoginFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_maps"
+            app:destination="@id/maps" />
     </fragment>
     <fragment
         android:id="@+id/addFragment"
@@ -64,6 +67,9 @@
         <action
             android:id="@+id/action_jogosListFragment_to_userLoginAddFragment"
             app:destination="@id/userLoginAddFragment" />
+        <action
+            android:id="@+id/action_jogosListFragment_to_update_jogos_list"
+            app:destination="@id/update_jogos_list" />
     </fragment>
     <fragment
         android:id="@+id/userLoginAddFragment"
@@ -77,4 +83,25 @@
             android:id="@+id/action_userLoginAddFragment_to_userLoginFragment"
             app:destination="@id/userLoginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/update_jogos_list"
+        android:name="com.example.worldfootball.fragments.update_jogos.update_jogos_list"
+        android:label="fragment_update_jogos_list"
+        tools:layout="@layout/fragment_update_jogos_list" >
+        <action
+            android:id="@+id/action_update_jogos_list_to_jogosListFragment"
+            app:destination="@id/jogosListFragment" />
+        <action
+            android:id="@+id/action_update_jogos_list_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+        <argument
+            android:name="current_jogos_list"
+            app:argType="com.example.worldfootball.api_worldfootball.models.Jogos_Models" />
+    </fragment>
+
+    <activity
+        android:id="@+id/maps"
+        android:name="com.example.worldfootball.maps.Maps"
+        android:label="Maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>

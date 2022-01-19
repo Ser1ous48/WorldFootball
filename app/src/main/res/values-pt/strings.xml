@@ -38,4 +38,13 @@
     <string name="Sair">Sair</string>
     <string name="Sair_mensagem">Sair?</string>
     <string name="preencher_equipas">Preencha as equipas!</string>
+    <string name="api_error_something_went_wrong">Ups! Algo correu mal. Tente de novo.</string>
+    <string name="api_error_report_not_found">Este jogo não foi encontrado, provavelmente foi apagado. Tente outra vez.</string>
+    <string name="api_error_authorisation_failed">Autenticação falhada. Faça login de novo.</string>
+    <string name="api_error_wrong_login">Utilizador ou palavra-passe errada.</string>
+    <string name="ony_edit_your_games">Apenas pode apagar ou atualizar os seus dados.</string>
+    <string name="successfull_updated_games">Jogo atualizado com sucesso!</string>
+    <string name="successfull_deleted_games">Jogo apagado com sucesso!</string>
+    <string name="delete_game">Apagar Jogo</string>
+    <string name="question_delete_game">Tem a certeza que quer apagar o jogo?</string>
 </resources>

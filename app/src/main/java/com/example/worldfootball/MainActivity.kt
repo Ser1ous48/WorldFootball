@@ -1,7 +1,7 @@
 package com.example.worldfootball
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 
@@ -10,12 +10,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //setupActionBarWithNavController(findNavController(R.id.fragment))
+        setupActionBarWithNavController(findNavController(R.id.fragment))
     }
 
-    override fun onSupportNavigateUp(): Boolean {
+    /*override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.fragment)
-
-        return navController.navigateUp() || super.onSupportNavigateUp()
-    }
+        return navController.navigateUp()|| super.onSupportNavigateUp()
+    }*/
 }
+

@@ -37,12 +37,12 @@ class JogosListAdapter(userIdInSession: String?) : RecyclerView.Adapter<JogosLis
         holder.itemView.username_list.text = currentItem.user_name
         holder.itemView.EquipaCasa_list.text = currentItem.EquipaCasa
         holder.itemView.EquipaFora_list.text = currentItem.EquipaFora
-        holder.itemView.GolosMarcadosCasa_list.text = currentItem.ResultadoCasa.toString()
-        holder.itemView.GolosMarcadosFora_list.text = currentItem.ResultadoFora.toString()
-        holder.itemView.AmarelosCasa_list.text = currentItem.AmarelosCasa.toString()
-        holder.itemView.AmarelosFora_list.text = currentItem.AmarelosFora.toString()
-        holder.itemView.VermelhosCasa_list.text = currentItem.VermelhosCasa.toString()
-        holder.itemView.VermelhosFora_list.text = currentItem.VermelhosFora.toString()
+        holder.itemView.GolosMarcadosCasa_list.text = currentItem.ResultadoCasa?.toString()
+        holder.itemView.GolosMarcadosFora_list.text = currentItem.ResultadoFora?.toString()
+        holder.itemView.AmarelosCasa_list.text = currentItem.AmarelosCasa?.toString()
+        holder.itemView.AmarelosFora_list.text = currentItem.AmarelosFora?.toString()
+        holder.itemView.VermelhosCasa_list.text = currentItem.VermelhosCasa?.toString()
+        holder.itemView.VermelhosFora_list.text = currentItem.VermelhosFora?.toString()
 
         if(position%2 == 0){
             holder.itemView.setBackgroundColor(Color.parseColor("#d6d4e0"))
@@ -63,6 +63,21 @@ class JogosListAdapter(userIdInSession: String?) : RecyclerView.Adapter<JogosLis
                 Toast.makeText(_ctx,R.string.ony_edit_your_reports, Toast.LENGTH_LONG).show()
             }
         }*/
+
+        holder.itemView.rowLayout_list.setOnClickListener {
+            if(_userIdInSession == currentItem.users_id.toString()){
+                val action =
+                    JogosListFragmentDirections.actionJogosListFragmentToUpdateJogosList(//actionReportsListFragmentToUpdateReportFragment
+                        currentItem
+                    )
+                holder.itemView.findNavController().navigate(action)
+            }
+            else {
+                Toast.makeText(_ctx,R.string.ony_edit_your_games, Toast.LENGTH_LONG).show()
+            }
+        }
+
+
     }
 
     override fun getItemCount(): Int {

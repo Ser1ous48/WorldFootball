@@ -46,6 +46,15 @@
     <string name="Sair">Logout</string>
     <string name="Sair_mensagem">Logout?</string>
     <string name="preencher_equipas">Fill team names!</string>
+    <string name="api_error_something_went_wrong">Ups! Something went wrong. Please try again.</string>
+    <string name="api_error_report_not_found">This report was not found, probably is was deleted. Reload data or try again.</string>
+    <string name="api_error_authorisation_failed">Authorization failed. Please login again.</string>
+    <string name="api_error_wrong_login">Wrong username or password.</string>
+    <string name="ony_edit_your_games">Ups! You can only update or delete your notes.</string>
+    <string name="successfull_updated_games">Game has been successfully updated!</string>
+    <string name="successfull_deleted_games">Game has been successfully deleted!</string>
+    <string name="delete_game">Delete Game</string>
+    <string name="question_delete_game">Are you sure you want delete this game?</string>
 
 
 </resources>

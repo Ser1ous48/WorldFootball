@@ -58,6 +58,14 @@ class ListFragment : Fragment() {
         if(item.itemId == R.id.menu_delete){
             deleteAllJogos()
         }
+
+        if(item.itemId == R.id.maps){
+            //findNavController().navigate(R.id.action_listFragment_to_maps_2)
+            openmaps()
+        }
+
+
+
         return super.onOptionsItemSelected(item)
     }
 
@@ -76,6 +84,10 @@ class ListFragment : Fragment() {
     }
     private  fun openlogin(){
         findNavController().navigate(R.id.action_listFragment_to_userLoginFragment)
+    }
+
+    private  fun openmaps(){
+        findNavController().navigate(R.id.action_listFragment_to_maps)
     }
 
 }
